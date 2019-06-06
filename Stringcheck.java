@@ -6,11 +6,14 @@ class Main
   {
 	Scanner input=new Scanner(System.in);
 	String a=input.nextLine();
+	int l=a.length();
 	int b=input.nextInt();
-	for(int i=b;i<a.length();i++)
-	{
-		char c=a.charAt(i);
-		System.out.print(c);
-	}
+	b=l-b;
+    String str="";
+    for(int i=b;i<l;i++)
+    {
+        str=str+a.charAt(i);
+    }
+    System.out.println(str);
   }
 }
